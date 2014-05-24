@@ -1,4 +1,4 @@
-vimfiles
+dotfiles
 ========
 
-Vim config files
+dot config files
