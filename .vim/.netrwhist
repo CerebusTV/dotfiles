@@ -1,0 +1,7 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/usr/local/Cellar/macvim/7.4-73/MacVim.app/Contents/Resources/vim/runtime/doc'
+let g:netrw_dirhist_2='/Users/thom/.vim/settings/plugins'
+let g:netrw_dirhist_3='/Users/thom'
+let g:netrw_dirhist_4='/Users/thom/.vim/settings'
+let g:netrw_dirhist_5='/Users/thom/dev/RhoMobile/oppen/oppy-bak/sharepoint/src/test/spec'
