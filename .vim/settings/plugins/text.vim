@@ -1,18 +1,24 @@
 
 
+" Better block matching
 Plugin 'tmhedberg/matchit'
 
-" Convert between multi and single line statements
-Plugin 'AndrewRadev/splitjoin.vim'
+Plugin 'Raimondi/delimitMate'
+"Plugin 'tpope/vim-surround.git'
 
+" Convert between multi and single line statements
+"Plugin 'AndrewRadev/splitjoin.vim'
+
+" NOTE: Overrides _ and + keys by default which is disconerting
+"Plugin 'terryma/vim-expand-region'
+"map ] <Plug>(expand_region_expand)
+"map [ <Plug>(expand_region_shrink)
 
 "Plugin 'tpope/vim-unimpaired'
 
-
+Plugin 'Lokaltog/vim-easymotion'
 
 " Completion
-"Plugin 'Shougo/neocomplete.vim'
-"Plugin 'Valloric/YouCompleteMe'
 "Plugin 'ervandew/supertab'
 "Plugin 'vim-scripts/taglist.vim'
 "Plugin 'vim-scripts/AutoTag'
@@ -42,16 +48,20 @@ Plugin 'AndrewRadev/splitjoin.vim'
 "Plugin 'kana/vim-textobj-function'
 "Plugin 'kana/vim-textobj-user'
 "Plugin 'lucapette/vim-textobj-underscore'
-"Plugin 'nathanaelkane/vim-indent-guides'
 "Plugin 'thinca/vim-textobj-function-javascript'
 "Plugin 'vim-scripts/argtextobj.vim'
 
-Plugin 'sirver/ultisnips'
-let g:UltiSnipsSnippetsDir='~/.vim/snips'
+"Plugin 'sirver/ultisnips'
+"let g:UltiSnipsSnippetsDir='~/.vim/snips'
+
+Plugin 'Shougo/neosnippet'
+Plugin 'Shougo/neosnippet-snippets'
+
 
 " Visually display indents
 Plugin 'nathanaelkane/vim-indent-guides'
 let g:indent_guides_guide_size = 1
+let g:indent_guides_enable_on_vim_startup = 1
 
 
 

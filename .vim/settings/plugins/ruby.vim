@@ -15,6 +15,7 @@ Plugin 'tpope/vim-rake'
 Plugin 'ecomba/vim-ruby-refactoring'
 Plugin 'tpope/vim-bundler'
 Plugin 'tpope/vim-endwise'
+
 " Covered by splitjoin plugin - Plugin 'vim-scripts/blockle.vim'
 
 
@@ -24,9 +25,9 @@ Plugin 'tpope/vim-endwise'
 
 " Testing
 "Plugin 'Keithbsmiley/rspec.vim'
+"Plugin 'skalnik/vim-vroom'
 "Plugin 'janx/vim-rubytest'
 "Plugin 'thoughtbot/vim-rspec'
-"Plugin 'Keithbsmiley/rspec.vim'
 "Plugin 'vim-scripts/Specky'
 
 " Make those debugger statements painfully obvious

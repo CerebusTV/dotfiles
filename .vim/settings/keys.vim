@@ -47,18 +47,17 @@ map <C-l> <C-w>l
 
 " Tabs
 nmap <leader>[ :tabprevious<cr>
-nmap <leader>] :tabNext<cr>
-nmap T :tabnew<cr>
+nmap <leader>] :tabnext<cr>
+"nmap T :tabnew<cr>
 
 " Plugin keys
+
 " ag
-nmap <leader>ag :Ag ""<Left>
-nmap <leader>af :AgFile ""<Left>
+nmap <leader>g :Ag 
 
 " netrw
-nnoremap <leader>f :E<cr>
+"nnoremap <leader>f :E<cr>
 
-" Unite
-nnoremap <leader>u :<C-u>Unite  -buffer-name=files buffer   -start-insert file_rec/async:!<cr>
-"nnoremap <leader>t :<C-u>Unite  -buffer-name=tags   -start-insert file_rec/async:!<cr>
-nnoremap <leader>t :Unite -no-split -auto-preview -start-insert tag<cr>
+" Autoformat
+nmap <leader>= :Autoformat<CR>
+

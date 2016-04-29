@@ -17,19 +17,6 @@ zstyle ':prezto:*:*' color 'yes'
 
 # Set the Zsh modules to load (man zshmodules).
 # zstyle ':prezto:load' zmodule 'attr' 'stat'
-#zstyle ':prezto:load' zmodule \
-#  'attr' \
-#  'utility' \
-#  'archive' \
-#  'completion' \
-#  'editor' \
-#  'directory' \
-#  'history' \
-#  'history-substring-search' \
-#  'osx' \
-#  'ruby' 
-#  'prompt' \
-#  'stat'
 
 # Set the Zsh functions to load (man zshcontrib).
 # zstyle ':prezto:load' zfunction 'zargs' 'zmv'
@@ -52,7 +39,7 @@ zstyle ':prezto:load' pmodule \
 #
 
 # Set the key mapping style to 'emacs' or 'vi'.
-zstyle ':prezto:module:editor' key-bindings 'vi'
+zstyle ':prezto:module:editor' key-bindings 'emacs'
 
 # Auto convert .... to ../..
 # zstyle ':prezto:module:editor' dot-expansion 'yes'

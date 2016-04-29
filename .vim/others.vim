@@ -420,6 +420,7 @@ let g:syntastic_enable_signs=1
 
   " Exclude files and directories
   set wildignore+=*/.git/*,*/.hg/*,*/.svn/*
+  set wildignore+=*/spec/support/fixtures/*
   set wildignore+=*/.DS_Store,*/.idea/*,*/.sass-cache/*,*/*.swp
   set wildignore+=*\\.git\\*,*\\.hg\\*,*\\.svn\\*
   set wildignore+=*\\.DS_Store,*\\.idea\\*,*\\.sass-cache\\*,*\\*.swp

@@ -3,6 +3,11 @@
 "Plugin 'xolox/vim-misc'
 "Plugin 'xolox/vim-easytags'
 
+" Testing
+Plugin 'janko-m/vim-test'
+
+" Formatting
+Plugin 'Chiel92/vim-autoformat'
 
 " Languages
 Plugin 'briancollins/vim-jst'
@@ -16,8 +21,6 @@ Plugin 'tpope/vim-cucumber'
 Plugin 'vim-scripts/SQLComplete.vim'
 Plugin 'avakhov/vim-yaml.git'
 
-"Plugin 'Shougo/neocomplete.vim'
-Plugin 'Valloric/YouCompleteMe'
 
 "---- Syntastic 
 "Plugin 'scrooloose/syntastic.git'
@@ -36,5 +39,6 @@ Plugin 'Valloric/YouCompleteMe'
 
 
 " Toggle comments
-Plugin 'vim-scripts/tComment'
+"Plugin 'vim-scripts/tComment'
+"PLugin 'tpope/vim-commentary'
 

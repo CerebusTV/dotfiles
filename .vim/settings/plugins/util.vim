@@ -1,23 +1,20 @@
 " Run commands in background
+Plugin 'Shougo/vimproc.vim'
 Plugin 'tpope/vim-dispatch'	
-Plugin 'ervandew/screen'
+
+" Why try to emulate a shell window?
+"Plugin 'ervandew/screen'
 "Plugin 'Shougo/vimshell.vim'
+
+
 "PLugin 'sjl/gundo.vim'
 
-"Plugin 'xolox/vim-session'
-
-" Buffer
-"Plugin 'jlanzarotta/bufexplorer'
-"noremap <leader>be :BufExplorerHorizontalSplit<CR>
-
 " Windows
-Plugin 'vim-scripts/ZoomWin'
+"Plugin 'vim-scripts/ZoomWin'
 
 
-"Plugin 'terryma/vim-multiple-cursors'
+Plugin 'terryma/vim-multiple-cursors'
 
-"Plugin 'Raimondi/delimitMate'
-"Plugin 'tpope/vim-surround.git'
 "Plugin 'tpope/vim-repeat.git'
 
 " Run the current file in a ConqueTerm, great for ruby tests
@@ -48,4 +45,8 @@ Plugin 'vim-scripts/ZoomWin'
 " console open and running irb for this to work. Somehow it gets confused
 " when multiple consoles are open. If you know how to fix this let me know :)
 "let g:ConqueTerm_SendVisKey = '<Leader>e'
-"
+
+" Session managment
+"Plugin 'xolox/vim-session'
+"Plugin 'tpope/vim-projectionist'
+

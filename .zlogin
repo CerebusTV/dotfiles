@@ -20,8 +20,3 @@ if (( $+commands[fortune] )); then
   print
 fi
 
-#export JRUBY_HOME=/usr/local/Cellar/jruby/1.7.11
-export PATH=~/bin:/usr/local/bin:$PATH
-
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-
