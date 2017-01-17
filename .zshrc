@@ -56,16 +56,18 @@ alias less='less -R'
 alias watch='watch --color'
 
 # rails / bundler
-alias r='rails'
-alias rspec='be rspec'
 alias b='bundle'
 alias bundler='bundle'
 alias bi='b install'
 alias bu='b update'
 alias be='b exec'
 alias bo='b open'
+# Used to run single specs using bundle exec
+alias rspec='bundle exec rspec --tag ~@javascript --tag ~@js --tag ~driver:iphone'
+# Used to run all specs for a project that do not require JavaScript
+alias rspecnojs='bundle exec rspec spec --format progress --tag ~@javascript --tag ~@js'
+alias railss='be rails s -b 0.0.0.0'
 alias pryc='bundle exec pry -r `test -f config/environment.rb && echo "./config/environment" || echo "./config/boot"`'
-alias rspecnojs='be rspec spec --format progress --tag ~@javascript --tag ~@js'
 
 # subversion
 alias svndiff='svn diff --diff-cmd=colordiff'
@@ -81,13 +83,14 @@ alias lfc='find . -depth 1 -type d | sort | while read -r dir; do n=$(find "$dir
 alias admin_on='dseditgroup -o edit -a sptev -t user admin'
 alias admin_off='dseditgroup -o edit -d sptev -t user admin'
 
+alias emacs='/usr/local/bin/emacs'
 #}}}
 
 #{{{ Programming Language Stuff
 
 # Java
 #JAVA_HOME="/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home"
-export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.7.0_55.jdk/Contents/Home"
+export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_31.jdk/Contents/Home"
 export JAVA_OPTS=-client
 #export M2_HOME=~/Developer/apache-maven-3.2.3
 # ForgeRock
@@ -161,6 +164,8 @@ promptinit
 prompt nicoulaj
 
 #}}}
+
+export FZF_DEFAULT_COMMAND='ag -g ""'
 
 PERL_MB_OPT="--install_base \"/Users/sptev/perl5\""; export PERL_MB_OPT;
 PERL_MM_OPT="INSTALL_BASE=/Users/sptev/perl5"; export PERL_MM_OPT;

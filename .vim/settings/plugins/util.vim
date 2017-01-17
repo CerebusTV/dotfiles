@@ -7,6 +7,8 @@ Plugin 'tpope/vim-dispatch'
 "Plugin 'Shougo/vimshell.vim'
 
 
+" Undo tree
+Plugin 'mbbill/undotree'
 "PLugin 'sjl/gundo.vim'
 
 " Windows

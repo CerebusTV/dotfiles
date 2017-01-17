@@ -40,5 +40,5 @@ Plugin 'avakhov/vim-yaml.git'
 
 " Toggle comments
 "Plugin 'vim-scripts/tComment'
-"PLugin 'tpope/vim-commentary'
+Plugin 'tpope/vim-commentary'
 

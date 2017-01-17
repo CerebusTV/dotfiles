@@ -74,8 +74,8 @@ set vb t_vb= " disable any beeps or flashes on error
 set ruler " Ruler on
 set nu " Line numbers on
 set cf " Enable error files & error jumping
-set nowrap " Line wrapping off
-set textwidth=0		" Don't wrap lines by default
+"et nowrap " Line wrapping off
+"et textwidth=0		" Don't wrap lines by default
 set cursorline  " Highlight line with cursor
 set scrolloff=3 " Start scrolling 3 lines before the horizontal window border
 set showmatch  " Show matching brackets.
@@ -163,5 +163,12 @@ nnoremap <leader>o :<C-u>Unite  -buffer-name=outline -start-insert outline<cr>
 "nnoremap <leader>u :<C-u>Unite  files buffer   -start-insert file_rec/async:!<cr>
 map <leader>t :!retag<cr>:Unite -no-split -auto-preview -start-insert tag<cr>
 
-command! -nargs=* Wrap set wrap linebreak nolist
+set wrap linebreak nolist
 
+"command! -nargs=* Wrap set wrap linebreak nolist
+
+set ffs=unix,dos
+set ff=unix
+
+filetype plugin indent on
+syntax on

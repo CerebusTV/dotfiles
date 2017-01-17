@@ -121,7 +121,7 @@ Plugin 'stefandtw/quickfix-reflector.vim'
 
 Plugin 'Shougo/unite.vim'
 Plugin 'tsukkee/unite-tag'
-Plugin 'hewes/unite-gtags'
+"Plugin 'hewes/unite-gtags'
 Plugin 'Shougo/unite-outline'
 Plugin 'Shougo/unite-session'
 Plugin 'Shougo/vimfiler.vim'
@@ -130,7 +130,6 @@ Plugin 'Shougo/vimfiler.vim'
 
 "Plugin 'Shougo/neocomplete.vim'
 "Plugin 'Shougo/neoinclude.vim'
-"" NOTE: YouCompleteMe is broken because it requires Python 2
 Plugin 'Valloric/YouCompleteMe'
 
 " Make it act like CtrlP
@@ -177,8 +176,9 @@ let g:DirDiffAddArgs = "-w"
 
 Plugin 'vcscommand.vim'
 Plugin 'tpope/vim-fugitive'
+Plugin 'idanarye/vim-merginal'
 Plugin 'https://github.com/sjl/splice.vim.git'
 Plugin 'http://github.com/sjl/gundo.vim.git'
 
-Plugin 'vimoutliner/vimoutliner'
+set diffopt+=vertical
 
