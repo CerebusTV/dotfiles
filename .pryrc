@@ -1,3 +1,12 @@
+#begin
+#  require 'pry-clipboard'
+#  # aliases
+#  Pry.config.commands.alias_command 'ch', 'copy-history'
+#  Pry.config.commands.alias_command 'cr', 'copy-result'
+#rescue LoadError => e
+#  warn "can't load pry-clipboard"
+#end
+
 Pry.config.editor = "vim"
 
 if defined?(PryNav)
@@ -14,6 +23,14 @@ class Object
   # Return only the methods not present on basic objects
   def methods_diff
     (self.methods - Object.methods).sort
+  end
+end
+
+class Module
+  def ancestors_that_implement_instance_method(instance_method)
+    ancestors.find_all do |ancestor|
+      (ancestor.instance_methods(false) + ancestor.private_instance_methods(false)).include?(instance_method)
+    end
   end
 end
 
@@ -36,7 +53,7 @@ default_command_set = Pry::CommandSet.new do
 #    output.puts "-- Copied from pry--\n#{str}"
 #  end
 
-  command "exec_sql", "Send sql over AR." do |query|
+  command "exec_sql", "Send SQL over AR." do |query|
     if ENV['RAILS_ENV'] || defined?(Rails)
       pp ActiveRecord::Base.connection.select_all(query)
     else
@@ -44,7 +61,7 @@ default_command_set = Pry::CommandSet.new do
     end
   end
 
-  command "caller_depth", "Call stack to depth" do |depth|
+  command "caller_d", "Call stack to depth" do |depth|
     depth = depth.to_i || 1
     if /^(.+?):(\d+)(?::in `(.*)')?/ =~ caller(depth+1).first
       file   = Regexp.last_match[1]
@@ -54,14 +71,17 @@ default_command_set = Pry::CommandSet.new do
     end
   end
 
-#  command "caller_include", "Call stack with include filter" do |filter|
-#    output.puts "Filter substring required" if filter.nil?
-#    caller.select do |line|
-#      line.include?(substring) do
-#        output.puts(filter)
-#      end
-#    end
-#  end
+  command "caller_i", "Call stack matching substring" do |substring|
+    output.puts "substring required" if substring.nil?
+    output.puts caller.select { |line| line.to_s.include?(substring) }
+  end
+
+  command "caller_m", "Call stack matching regex" do |pattern|
+    output.puts "regex pattern required" if pattern regex.nil?
+    regex = Regexp.new(pattern)
+    #output.puts "regex: #{regex} > #{regex.class}"
+    output.puts caller.select { |line| regex.match(line.to_s) }
+  end
 end
 
 # Launch Pry with access to the entire Rails stack.

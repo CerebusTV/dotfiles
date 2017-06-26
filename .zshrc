@@ -65,8 +65,8 @@ alias bo='b open'
 # Used to run single specs using bundle exec
 alias rspec='bundle exec rspec --tag ~@javascript --tag ~@js --tag ~driver:iphone'
 # Used to run all specs for a project that do not require JavaScript
-alias rspecnojs='bundle exec rspec spec --format progress --tag ~@javascript --tag ~@js'
-alias railss='be rails s -b 0.0.0.0'
+alias rspecnojs='bundle exec rspec spec --format progress --tag ~@javascript --tag ~@js --tag ~driver:iphone'
+alias railss='bundle exec rails s -b 0.0.0.0'
 alias pryc='bundle exec pry -r `test -f config/environment.rb && echo "./config/environment" || echo "./config/boot"`'
 
 # subversion
