@@ -1,23 +1,21 @@
 " Run commands in background
-Plugin 'Shougo/vimproc.vim'
-Plugin 'tpope/vim-dispatch'	
-
-" Why try to emulate a shell window?
-"Plugin 'ervandew/screen'
-"Plugin 'Shougo/vimshell.vim'
+Plug 'Shougo/vimproc.vim', { 'do': 'make' }
+Plug 'tpope/vim-dispatch'	
 
 
 " Undo tree
-Plugin 'mbbill/undotree'
-"PLugin 'sjl/gundo.vim'
+Plug 'mbbill/undotree'
 
 " Windows
-"Plugin 'vim-scripts/ZoomWin'
+"Plug 'vim-scripts/ZoomWin'
 
 
-Plugin 'terryma/vim-multiple-cursors'
+Plug 'terryma/vim-multiple-cursors'
 
-"Plugin 'tpope/vim-repeat.git'
+" Code notepad
+Plug 'metakirby5/codi.vim'
+
+"Plug 'tpope/vim-repeat.git'
 
 " Run the current file in a ConqueTerm, great for ruby tests
 "let g:ConqueTerm_InsertOnEnter = 0
@@ -49,6 +47,6 @@ Plugin 'terryma/vim-multiple-cursors'
 "let g:ConqueTerm_SendVisKey = '<Leader>e'
 
 " Session managment
-"Plugin 'xolox/vim-session'
-"Plugin 'tpope/vim-projectionist'
+"Plug 'xolox/vim-session'
+"Plug 'tpope/vim-projectionist'
 

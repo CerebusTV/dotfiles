@@ -1,28 +1,23 @@
 
 
 " Better block matching
-Plugin 'tmhedberg/matchit'
+Plug 'tmhedberg/matchit'
 
-Plugin 'Raimondi/delimitMate'
-"Plugin 'tpope/vim-surround.git'
+Plug 'Raimondi/delimitMate'
+"Plug 'tpope/vim-surround.git'
+
+Plug 'godlygeek/tabular'
 
 " Convert between multi and single line statements
-"Plugin 'AndrewRadev/splitjoin.vim'
+"Plug 'AndrewRadev/splitjoin.vim'
 
 " NOTE: Overrides _ and + keys by default which is disconerting
-"Plugin 'terryma/vim-expand-region'
+"Plug 'terryma/vim-expand-region'
 "map ] <Plug>(expand_region_expand)
 "map [ <Plug>(expand_region_shrink)
 
-"Plugin 'tpope/vim-unimpaired'
-
-Plugin 'Lokaltog/vim-easymotion'
-
 " Completion
-"Plugin 'ervandew/supertab'
-"Plugin 'vim-scripts/taglist.vim'
-"Plugin 'vim-scripts/AutoTag'
-"Plugin 'majutsushi/tagbar'
+"Plug 'ervandew/supertab'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " MULTIPURPOSE TAB KEY
@@ -42,24 +37,24 @@ Plugin 'Lokaltog/vim-easymotion'
 " Snippets
 
 " Text objects
-"Plugin 'austintaylor/vim-indentobject'
-"Plugin 'coderifous/textobj-word-column.vim'
-"Plugin 'kana/vim-textobj-entire'
-"Plugin 'kana/vim-textobj-function'
-"Plugin 'kana/vim-textobj-user'
-"Plugin 'lucapette/vim-textobj-underscore'
-"Plugin 'thinca/vim-textobj-function-javascript'
-"Plugin 'vim-scripts/argtextobj.vim'
+"Plug 'austintaylor/vim-indentobject'
+"Plug 'coderifous/textobj-word-column.vim'
+"Plug 'kana/vim-textobj-entire'
+"Plug 'kana/vim-textobj-function'
+"Plug 'kana/vim-textobj-user'
+"Plug 'lucapette/vim-textobj-underscore'
+"Plug 'thinca/vim-textobj-function-javascript'
+"Plug 'vim-scripts/argtextobj.vim'
 
-"Plugin 'sirver/ultisnips'
+"Plug 'sirver/ultisnips'
 "let g:UltiSnipsSnippetsDir='~/.vim/snips'
 
-Plugin 'Shougo/neosnippet'
-Plugin 'Shougo/neosnippet-snippets'
+Plug 'Shougo/neosnippet'
+Plug 'Shougo/neosnippet-snippets'
 
 
 " Visually display indents
-Plugin 'nathanaelkane/vim-indent-guides'
+Plug 'nathanaelkane/vim-indent-guides'
 let g:indent_guides_guide_size = 1
 let g:indent_guides_enable_on_vim_startup = 1
 

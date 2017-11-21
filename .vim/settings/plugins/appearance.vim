@@ -1,5 +1,7 @@
+" Colors
+Plug 'w0ng/vim-hybrid'
 " Status Line
-Plugin 'itchyny/lightline.vim'
+Plug 'itchyny/lightline.vim'
 set laststatus=2
 " enable  syntastic integration
 let g:airline#extensions#syntastic#enabled = 1

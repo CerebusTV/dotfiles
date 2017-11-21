@@ -1,29 +1,29 @@
-" Tags
-"Plugin 'majutsushi/tagbar'
-"Plugin 'xolox/vim-misc'
-"Plugin 'xolox/vim-easytags'
-
 " Testing
-Plugin 'janko-m/vim-test'
+Plug 'janko-m/vim-test'
 
 " Formatting
-Plugin 'Chiel92/vim-autoformat'
+Plug 'Chiel92/vim-autoformat'
 
-" Languages
-Plugin 'briancollins/vim-jst'
-Plugin 'pangloss/vim-javascript'
-"Plugin 'othree/javascript-libraries-syntax.vim'
-"Plugin 'itspriddle/vim-jquery.git'
-Plugin 'tpope/vim-haml'
-Plugin 'hail2u/vim-css3-syntax'
-Plugin 'groenewege/vim-less'
-Plugin 'tpope/vim-cucumber'
-Plugin 'vim-scripts/SQLComplete.vim'
-Plugin 'avakhov/vim-yaml.git'
+" JavaScript
+Plug 'pangloss/vim-javascript'
+Plug 'othree/javascript-libraries-syntax.vim'
+Plug 'leafgarland/typescript-vim'
+Plug 'kchmck/vim-coffee-script', { 'do': 'make' }
 
+" Other Languages
+Plug 'tpope/vim-haml'
+Plug 'hail2u/vim-css3-syntax'
+Plug 'groenewege/vim-less'
+Plug 'vim-scripts/SQLComplete.vim'
+Plug 'stephpy/vim-yaml'
+
+" Elixir
+Plug 'elixir-lang/vim-elixir'
+Plug 'slashmili/alchemist.vim'
+Plug 'larrylv/ycm-elixir'
 
 "---- Syntastic 
-"Plugin 'scrooloose/syntastic.git'
+"Plug 'scrooloose/syntastic.git'
 " show list of errors and warnings on the current file
 "nmap <leader>e :Errors<CR>
 " check also when just opened the file
@@ -39,6 +39,5 @@ Plugin 'avakhov/vim-yaml.git'
 
 
 " Toggle comments
-"Plugin 'vim-scripts/tComment'
-Plugin 'tpope/vim-commentary'
+Plug 'tpope/vim-commentary'
 
