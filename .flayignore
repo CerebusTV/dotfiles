@@ -1,0 +1,5 @@
+**/test/**/*.rb
+**/spec/**/*.rb
+**/config/**/*.rb
+*spec.rb
+*test.rb

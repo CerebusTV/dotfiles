@@ -1,3 +1,11 @@
+# Get policies and user ids for past due alerts
+curl 'https://apir.pinnacol.com/policyholder-alerts-api/subscribers/past_due' | jq '. | to_entries[] | .key | split("|") | join(",")' | sort > prod_past_due.csv
+
+# Get list of repos from github
+for n ({1..23}) do
+  curl -s --header "Accept: application/json" "https://github.pinnacol.com/api/v3/orgs/pinnacol/repos?type=all&page=$n" | jq -r '.[] | .html_url' >>| ~/repos.txt
+done
+
 # Use jq to create csv from json file
 jq -r '.payment_history | .[] | [.payment_number, .receipt_amount, .interest_paid, .amount_due, .loan_id, .payment_status, .principal_only] | @csv' loan_payments.json > loan_payments.csv
 

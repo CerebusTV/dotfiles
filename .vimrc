@@ -170,5 +170,10 @@ set wrap linebreak nolist
 set ffs=unix,dos
 set ff=unix
 
+augroup filetypedetect
+  au BufRead,BufNewFile *.pc set filetype=esqlc
+augroup END
+
 filetype plugin indent on
+
 syntax on

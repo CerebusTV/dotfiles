@@ -1,0 +1,21 @@
+iTerm 2:
+  - Afterglow
+  - DimmedMonokai
+  - JetBrains Darcula
+  - Molokai
+  - Monokai Soda
+  - Sundried
+
+MacVim:
+  - hybrid
+  - base16
+  - Tomorrow-Night
+  - molokai
+  - railscasts
+  - sex-railscasts
+  - codeschool
+  - earendel
+  - herald
+  - mustang
+  - solarized
+  - wombat256mod

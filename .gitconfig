@@ -1,21 +1,16 @@
-[core]
-	excludesfile = /Users/sptev/.gitignore_global
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
-[mergetool "sourcetree"]
-	cmd = /Users/sptev/Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
+[push]
+	default = matching
 [user]
-	email = tvaught@ofiglobal.com
-	name = sptev
-[commit]
-	template = /Users/sptev/.stCommitMsg
+	name = Thom Vaught
+	email = thom.vaught@pinnacol.com
 [alias]
-   co = checkout
-   st = status
-   br = branch
-   w = whatchanged
+	st = status
+	ci = commit
+	co = checkout
+	br = branch
+	l = log --graph --pretty=format:'%C(yellow)%h%Creset %C(bold red)%d%Creset %s %C(bold green)%ar%Creset %C(bold blue)%an%Creset'
+	ll = log --stat --graph --decorate --pretty=medium
+	lll = log --stat --graph --decorate --pretty=medium --patch --minimal
    ribbon = tag --force _ribbon origin/master
    catchup = log --patch --reverse --topo-order _ribbon..origin/master
    daily-report = !git --no-pager log --author=Thom --since='yesterday' --format='%s' --no-merges
@@ -34,4 +29,8 @@
    default = simple
 [pull]
    rebase = true
-  
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
