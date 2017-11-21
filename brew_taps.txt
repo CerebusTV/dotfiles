@@ -1,0 +1,5 @@
+caskroom/cask
+homebrew/core
+homebrew/services
+instantclienttap/instantclient
+raggi/ale
